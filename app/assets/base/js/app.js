@@ -352,8 +352,13 @@ var App = function() {
                 }
 
                 Ascroll();
-                
+
             })()
+
+            $("#individuals_bankruptcy").on("click", function() {
+                window.open("./bankruptcy.html", '_self')
+            })
+
 
 
             $( window ).resize(function(){
