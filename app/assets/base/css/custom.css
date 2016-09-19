@@ -1,0 +1,472 @@
+.imagecontour {
+ padding: 10px; 
+ border: solid 1px #EFEFEF;
+ background-color: #FFFFFF;
+ }
+ 
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.c-phone {
+/*  float: left;
+*/  margin: 35px 20px 0;
+  font-size: 24px;
+}
+
+.c-top-menu {
+  float: left;
+  /*float: right;
+  margin-right: 30px;*/
+}
+
+.c-header-buttons {
+    margin-top: 33px;
+  }
+
+.c-header-buttons li {
+  list-style-type: none;
+  /*display: inline-block;*/
+  float:right;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.c-header-buttons li:last-child {
+  margin-left: 0;
+}
+
+.map-header {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.map {
+  margin-left: 2%;
+  margin-bottom: 10px;
+}
+
+.c-layout-header-fixed .c-layout-header {
+  position: static;
+}
+
+.c-navbar {
+  background: #2F353B;
+}
+
+.c-link {
+  color: white;
+  font-weight: 500;
+}
+
+.nav>li>.c-link:hover {
+  background: #2F353B;
+}
+
+.file_upload{
+    position: relative;
+    margin-left: 20px;
+    overflow: hidden;
+    font-size: 1em;              
+    height: 46px;                 
+    line-height: 1em;  
+}
+
+.file_upload .button{
+    float: left;
+    text-align: center; 
+    background: #32c5d2;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 13px 36px;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.file_upload .button:hover {
+      cursor: pointer;
+}
+
+.file_upload:hover .button{
+    background: #27a8b4;
+}
+
+.file_upload input[type=file]{
+    position: absolute;
+    top: 0;
+    opacity: 0;    
+    display: none;           
+}
+
+.fa-paperclip {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.form__submit {
+  float: right;
+  margin-right: 20px;
+  padding: 13px 36px;
+}
+
+.footer-logo {
+  height: 100px;
+}
+
+.fa-home, .fa-phone, .fa-envelope-o {
+  margin-right: 10px;
+}
+
+.footer-navigation li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.c-layout-footer.c-layout-footer-1 .c-prefooter .c-links .c-nav.footer-navigation {
+  margin-top: 40px;
+}
+
+.footer-navigation li:first-child {
+  margin-right: 10px;
+}
+
+.footer-navigation li:last-child {
+  margin-right: 0;
+}
+
+.c-layout-footer.c-layout-footer-1 .c-prefooter .c-links .c-nav > li > a.c-footer-link_active {
+  color: #32c5d2
+}
+
+.c-layout-footer.c-layout-footer-1 .c-prefooter .c-feedback h3 {
+  margin-left: 20px;
+}
+
+.c-layout-footer.c-layout-footer-1 .c-prefooter .c-feedback form .form-control {
+  border-top-color: transparent;
+}
+
+.c-layout-footer.c-layout-footer-1 .c-prefooter .c-feedback form .c-form-wrap-group .form-control:last-child {
+  border-top-color: #474f59;
+}
+
+.c-layout-footer.c-layout-footer-1 .c-prefooter .c-contact {
+  padding: 5px 5px 5px 20px;
+}
+
+.documents-header {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.head-block {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.documents-content {
+  padding: 20px 0;
+}
+
+.documents-list, .documents-files {
+  padding: 10px 20px;
+}
+
+.documents-files {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.documents-files h2 {
+  margin-bottom: 15px;
+}
+
+.download-documents-btn {
+    background: #32c5d2;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 7px 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.download-documents-btn:hover {
+    background: #27a8b4;
+}
+
+.documents-files__list li {
+  margin-top: 15px;
+  list-style-type: none;
+  display: block;
+}
+
+.documents-files__list li div {
+  width: 25%;
+  float: left;
+  font-size: 40px;
+  margin-top: 2%;
+  margin-right: 3%;
+}
+
+.documents-files__list li p {
+  width: 72%;
+  float: right;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.documents-feedback {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 10px;
+  background: #394048;
+  border-bottom: 1px solid #ddd;
+}
+
+.documents-feedback h2 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.documents-feedback p span {
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+.documents-feedback p.upper {
+  text-transform: uppercase;
+}
+
+.documents-feedback form input {
+  margin-right: 40px;
+  margin-top: 6px;
+  padding: 7px 20px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+.documents-feedback form input[type="button"] {
+    background: #32c5d2;
+    vertical-align: top;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.documents-feedback form input[type="button"]:hover {
+  background: #27a8b4;
+}
+
+.documents-feedback form input[type="text"] {
+  border: 2px solid #fff;
+}
+
+.documents-feedback form input[type="text"]:focus {
+  border: 2px solid #32c5d2;
+}
+
+.documents-feedback form input:last-child {
+  margin-right: 0;
+}
+
+.accordion {
+  padding: 20px;
+}
+
+a.c-font-bold {
+  text-transform: uppercase;
+}
+
+.explain-btn {
+  padding: 10px 20px;
+  float: right;
+  margin-right: 20px;
+  color: #32c5d2;
+  font-weight: 600;
+  background: #fff;
+  outline: none;
+  border: none;  
+  border-radius: 3px;
+}
+
+.explain-btn:hover {
+  background: #27a8b4;
+  color: #fff;
+}
+
+.hidden-block {
+  display: none;
+}
+
+.sticky {  
+  position: fixed;
+  top: 0px;
+  z-index: 101;
+}
+
+.sticky .hidden-block {
+  display: block;
+  float: right;
+}
+
+.sticky .hidden-block a:first-child {
+  margin: 10px 15px;
+  color: #fff;
+}
+
+.sticky .hidden-block a:last-child {  
+  padding: 15px;
+  color: #fff;
+}
+
+
+.bankruptcy-header {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.bankruptcy-header h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  padding: 20px 0 30px;
+}
+
+.bankruptcy-header__info {
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.bankruptcy-header__info h2 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.bankruptcy-header__info input[type="button"] {
+    background: #32c5d2;
+    vertical-align: top;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.bankruptcy-header__info input[type="button"]:hover {
+    background: #27a8b4;
+}
+
+.bankruptcy-procedure {
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.bankruptcy-procedure h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+}
+
+.bankruptcy-procedure .individual, .bankruptcy-procedure .entity {
+  padding: 10px;
+}
+
+.bankruptcy-procedure .panel {
+  text-align: left;
+}
+
+.bankruptcy-procedure h3 {
+  font-size: 30px;
+}
+
+.bankruptcy-procedure i.fa.fa-file-o:before {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.bankruptcy-procedure .panel-collapse {
+  padding: 15px 20px;
+}
+
+body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong {
+  font-size: 24px;
+}
+
+.bankruptcy-short-info {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bankruptcy-short-info__block {
+  padding: 15px 20px;
+  border: 1px solid #333 ;
+}
+
+.bankruptcy-short-info__block h2, .bankruptcy-short-info__block p {
+  text-align: center;
+}
+
+
+
+
+
+@media (max-width: 992px) {
+  .documents-feedback form input {
+    margin: 6px auto;
+  }
+
+  .documents-feedback p span {
+    display: block;
+  }
+
+  .sticky .hidden-block {
+    display: none;
+    float: left;
+  }
+}
