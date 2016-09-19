@@ -439,8 +439,9 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
 }
 
 .bankruptcy-short-info {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
 }
 
 .bankruptcy-short-info__block {
@@ -452,9 +453,48 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
   text-align: center;
 }
 
+.bankruptcy-main-info {
+  padding: 15px 10px;
+}
 
+.bankruptcy-main-info .accent {
+  display: block;
+  padding: 10px;
+  border: 2px solid #333;
+}
 
+.bankruptcy-main-info a {
+  font-weight: bold;
+}
 
+.bankruptcy-about-company {
+  padding: 15px 10px;
+  border-top: 1px solid #333;
+}
+
+.bankruptcy-about-company h2, .bankruptcy-about-company h3 {
+  text-align: center;
+}
+
+.bankruptcy-about-company h2 {
+  font-size: 24px;
+}
+
+.bankruptcy-about-company h3 {
+  margin: 30px 0 20px;
+}
+
+.bankruptcy-about-company .left {
+  text-align: right;
+}
+
+.bankruptcy-about-company .right {
+  text-align: left;
+}
+
+.bankruptcy-about-company .left i:before, .bankruptcy-about-company .right i:before {
+  font-size: 40px;
+}
 
 @media (max-width: 992px) {
   .documents-feedback form input {
@@ -469,4 +509,16 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
     display: none;
     float: left;
   }
+}
+
+@media (max-width: 769px) {
+
+  .bankruptcy-about-company .left {
+    text-align: center;
+  }
+
+  .bankruptcy-about-company .right {
+    text-align: center;
+  }
+
 }
