@@ -359,7 +359,34 @@ var App = function() {
                 window.open("./bankruptcy.html", '_self')
             })
 
+            $("#order-call-btn").on("click", function() {
+                $('#order-call-popup').bPopup({
+                    easing: 'easeOutBack', 
+                    speed: 450,
+                    transition: 'slideDown'
+                });
+            })
 
+            $("#order-call-a").on("click", function() {
+                $('#order-call-popup').bPopup({
+                    easing: 'easeOutBack', 
+                    speed: 450,
+                    transition: 'slideDown'
+                });
+            })
+
+            $("#know-price-btn").on("click", function() {
+                bPopup = $('#know-price-popup').bPopup({
+                    easing: 'easeOutBack', 
+                    speed: 450,
+                    transition: 'slideDown'
+                });
+            })
+
+
+            $("#close_popup").on("click", function() {
+                bPopup.close();
+            })
 
             $( window ).resize(function(){
                 $( ".file_upload input" ).triggerHandler( "change" );

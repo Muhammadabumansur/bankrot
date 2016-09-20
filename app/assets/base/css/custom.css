@@ -540,8 +540,151 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
   margin-right: 0;
 }
 
+.order-call {
+  display: none;
+  position: absolute;
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #333;
+  z-index: 100;
+}
 
+.order-call__header, .know-price__header {
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 15px; 
+  border-bottom: 1px solid #333;
+}
 
+.order-call label {
+  margin: 15px 15px 10px;
+}
+
+.order-call input[type="text"] {
+  margin: 0 15px;
+  padding: 3px 10px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.order-call input[type="text"]:focus {
+  border: 1px solid #32c5d2;
+}
+
+.order-call p {
+  font-size: 12px;
+  padding: 15px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #333;
+}
+
+.order-call input[type="submit"] {
+  display: block;
+  margin: 10px auto;
+  text-transform: uppercase;
+  background: #32c5d2;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.order-call input[type="submit"]:hover {
+  background: #27a8b4;
+}
+
+.know-price {
+  display: none;
+  width: 800px;
+  position: absolute;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #333;
+  z-index: 100;
+}
+
+.know-price p {
+  text-align: center;
+  padding: 20px;
+}
+
+.know-price .left {
+  text-align: right;
+  padding-left: 50px;
+}
+
+.know-price .right {
+  text-align: left;
+  padding-right: 50px;
+}
+
+.know-price .row {
+  margin-bottom: 20px;
+}
+
+.know-price label {
+  margin-left: 10px;
+}
+
+.pers-info {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 20px 15% 0;
+  text-align: right;
+}
+
+.pers-info input {
+  margin-bottom: 15px;
+  padding: 3px 10px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  width: 75%;
+}
+
+.pers-info input:focus {
+  border: 1px solid #32c5d2;
+}
+
+.pers-info label {
+  margin-right: 15px;
+}
+
+.know-price-buttons {
+  text-align: center;
+}
+
+.know-price-buttons input[type="submit"], .know-price-buttons input[type="button"] {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 10px 0;
+  text-transform: uppercase;
+  background: #32c5d2;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.know-price-buttons input[type="submit"] {
+  margin-right: 20px;
+}
+
+.know-price-buttons input[type="submit"]:hover {
+  background: #27a8b4;
+}
 
 @media (max-width: 992px) {
   .documents-feedback form input {
