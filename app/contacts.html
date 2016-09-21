@@ -10,7 +10,7 @@ Follow: http://www.twitter.com/themehats
 -->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+<html lang="ru">
     <!--<![endif]-->
     <!-- BEGIN HEAD -->
 
@@ -55,30 +55,69 @@ Follow: http://www.twitter.com/themehats
                 <div class="container">
                     <!-- BEGIN: BRAND -->
                     <div class="c-navbar-wrapper clearfix row">
-                        <div class="c-brand c-pull-left col-md-2">
+                        <div class="c-brand col-md-2  col-md-push-1">
                             <a href="index.html" class="c-logo">
                                 <img src="assets/base/img/layout/logos/logo-3.png" alt="JANGO" class="c-desktop-logo">
                                 <img src="assets/base/img/layout/logos/logo-3.png" alt="JANGO" class="c-desktop-logo-inverse">
                                 <img src="assets/base/img/layout/logos/logo-3.png" alt="JANGO" class="c-mobile-logo"> </a>
+                            <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
+                                <span class="c-line"></span>
+                                <span class="c-line"></span>
+                                <span class="c-line"></span>
+                            </button>
+                            <button class="c-topbar-toggler" type="button">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </button>
                         </div>
                         <!-- END: BRAND -->
-                        
+                        <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-uppercase c-fonts-bold hidden-md hidden-lg">
+                            <ul class="nav navbar-nav c-theme-nav">
+                                <li>
+                                    <a href="index.html" class="c-link dropdown-toggle">
+                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="faq.html" class="c-link dropdown-toggle">Ответы на вопросы
+                                        
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="documents.html" class="c-link dropdown-toggle">Документы
+                                        
+                                    </a>
+                                </li>
+                                <li class="c-active">
+                                    <a href="" class="c-link dropdown-toggle">Контакты
+                                        
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                         <!-- BEGIN: PHONE -->
-                        <div class="c-phone  col-md-3 col-md-push-1 col-sm-push-4 col-sm-8"><a href="tel:+76325555555"><i class="icon-call-end c-theme-font"></i> 8 (632) 555-55-55</a></div>
+                        <div class="c-phone  col-md-3  col-md-push-1"><a href="tel:+76325555555"><i class="icon-call-end c-theme-font"></i> 8 (632) 555-55-55</a></div>
                         <!-- END: PHONE -->
 
                         <!-- BEGIN: HEADER-BUTTONS -->
-                        <nav class="c-top-menu col-md-push-1  col-md-5 col-sm-push-1 col-sm-8">
+                        <nav class="c-top-menu col-sm-12 col-md-7 col-lg-6  col-md-push-1">
                             <ul class="c-links c-theme-ul c-header-buttons clearfix">
-                                <li>
+                                <li class="col-xs-12 col-sm-6">
                                     <a href="javascript:;" class="btn c-theme-btn c-btn-square c-btn-uppercase c-btn-bold c-header-button" id="know-price-btn">Узнать стоимость</a>
                                 </li>
-                                <li>
+                                <li class="col-xs-12 col-sm-6">
                                     <a href="javascript:;" class="btn c-theme-btn c-btn-square c-btn-uppercase c-btn-bold c-header-button" id="order-call-btn">Заказать обратный звонок</a>
                                 </li>
                             </ul>                            
                         </nav>
                         <!-- END: HEADER-BUTTONS -->
+                        
+                        <!-- END: MEGA MENU -->
+                        <div class="hidden-block">
+                            <a href="javascript:;" class="btn c-theme-btn c-btn-square c-btn-uppercase c-btn-bold c-header-button" id="order-call-a">Заказать обратный звонок</a>
+                            <a href="javascript:;" class="btn c-theme-btn c-btn-square c-btn-uppercase c-btn-bold c-header-button" id="know-price-a">Узнать стоимость</a>
+                        </div>
+                        <!-- END: LAYOUT/HEADERS/MEGA-MENU -->
+                        <!-- END: HOR NAV -->
 
                     </div>
                 </div>
@@ -164,11 +203,10 @@ Follow: http://www.twitter.com/themehats
 
         <!-- End Popups -->
 
-
         <!-- BEGIN: PAGE CONTAINER -->
         <div class="c-layout-page">
             <!-- BEGIN: LAYOUT -->
-            <div class="c-navbar" id="navbarFixed">
+            <div class="c-navbar  visible-md visible-lg" id="navbarFixed">
                 <div class="container">
                     <!-- BEGIN: BRAND -->
                     <div class="c-navbar-wrapper clearfix">
@@ -196,7 +234,7 @@ Follow: http://www.twitter.com/themehats
                                     </a>
                                 </li>
                                 <li class="c-active">
-                                    <a href="javascript:;" class="c-link dropdown-toggle">Контакты
+                                    <a href="" class="c-link dropdown-toggle">Контакты
                                         
                                     </a>
                                 </li>

@@ -1,3 +1,9 @@
+body, html {
+  width: 100%;
+  overflow-x:hidden;
+}
+
+
 .imagecontour {
  padding: 10px; 
  border: solid 1px #EFEFEF;
@@ -30,8 +36,7 @@
 }
 
 .c-phone {
-/*  float: left;
-*/  margin: 35px 20px 0;
+  margin-top: 35px;
   font-size: 24px;
 }
 
@@ -43,14 +48,13 @@
 
 .c-header-buttons {
     margin-top: 33px;
+    padding-left: 0;
   }
 
 .c-header-buttons li {
   list-style-type: none;
-  /*display: inline-block;*/
   float:right;
   margin-bottom: 5px;
-  margin-left: 20px;
 }
 
 .c-header-buttons li:last-child {
@@ -156,6 +160,10 @@
   margin-right: 30px;
 }
 
+.nav.navbar-nav.c-theme-nav {
+  padding-left: 20px;
+}
+
 .c-layout-footer.c-layout-footer-1 .c-prefooter .c-links .c-nav.footer-navigation {
   margin-top: 40px;
 }
@@ -190,6 +198,7 @@
 
 .c-content-box.c-size-md {
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .documents-header {
@@ -299,7 +308,7 @@
 }
 
 .documents-feedback form input {
-  margin-right: 40px;
+  margin-right: 20px;
   margin-top: 6px;
   padding: 7px 20px;
   border-radius: 3px;
@@ -313,7 +322,7 @@
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 12px 20px;
     color: #fff;
     border: none;
     outline: none;
@@ -397,8 +406,7 @@ a.c-font-bold {
 
 .bankruptcy-header h1 {
   text-transform: uppercase;
-  font-size: 36px;
-  /*padding: 20px 0 30px;*/
+  font-size: 3.6rem;
 }
 
 .bankruptcy-header__info {
@@ -750,7 +758,13 @@ iframe {
   top: 0;
 }
 
+
 @media (max-width: 992px) {
+
+  .c-layout-header-fixed.c-layout-header-mobile-fixed .c-layout-page {
+    margin-top: 0;
+  }
+
   .documents-feedback form input {
     margin: 6px auto;
   }
@@ -767,6 +781,24 @@ iframe {
   .c-content-box.c-size-md.c-bg-green {
     background: #fff!important;
   }
+
+  .c-links {
+    display: inline-block;
+    
+  }
+
+  .c-phone, .c-top-menu {
+    text-align: center;
+  }
+
+  .documents-feedback form input[type="text"] {
+    width: 48%;
+  }
+
+  .documents-feedback form input[type="text"].sm-right {
+    float: right;
+  }
+
 }
 
 @media (max-width: 769px) {
@@ -778,5 +810,19 @@ iframe {
   .bankruptcy-about-company .right {
     text-align: center;
   }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .documents-feedback form input[type="text"] {
+    width: 100%;
+  }
+
+  .documents-feedback form input[type="text"].sm-right {
+    float: left;
+  }
+
+  
 
 }
