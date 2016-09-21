@@ -383,6 +383,14 @@ var App = function() {
                 });
             })
 
+            $("#know-price-a").on("click", function() {
+                bPopup = $('#know-price-popup').bPopup({
+                    easing: 'easeOutBack', 
+                    speed: 450,
+                    transition: 'slideDown'
+                });
+            })
+
 
             $("#close_popup").on("click", function() {
                 bPopup.close();

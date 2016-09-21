@@ -57,14 +57,24 @@
   margin-left: 0;
 }
 
+
+.c-content-box.c-size-md.c-bg-green {
+  background: linear-gradient(to right, #32c5d2 50%, #fff 0);
+}
+
 .map-header {
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .map {
-  margin-left: 2%;
   margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-wrapper {
+  background: #fff;
 }
 
 .c-layout-header-fixed .c-layout-header {
@@ -178,18 +188,33 @@
   padding: 5px 5px 5px 20px;
 }
 
+.c-content-box.c-size-md {
+  padding: 30px 0;
+}
+
 .documents-header {
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
 }
 
+.documents-header .c-page-breadcrumbs {
+  margin-top: 40px;
+}
+
 .head-block {
   padding: 10px;
   border: 1px solid #ddd;
+  background: #32c5d2;
+  color: #fff;
+}
+
+.head-block__header {
+  color: #fff;
 }
 
 .documents-content {
   padding: 20px 0;
+  background: #ddd;
 }
 
 .documents-list, .documents-files {
@@ -199,6 +224,7 @@
 .documents-files {
   border: 1px solid #ddd;
   text-align: center;
+  background: #fff;
 }
 
 .documents-files h2 {
@@ -223,22 +249,27 @@
     background: #27a8b4;
 }
 
+.documents-files__list {
+  padding-left: 0;
+}
+
 .documents-files__list li {
   margin-top: 15px;
   list-style-type: none;
   display: block;
 }
 
-.documents-files__list li div {
-  width: 25%;
+.documents-files__list li span {
+  display: block;
+  width: 20%;
   float: left;
   font-size: 40px;
   margin-top: 2%;
-  margin-right: 3%;
+  padding-right: 3%;
 }
 
 .documents-files__list li p {
-  width: 72%;
+  width: 80%;
   float: right;
   text-align: left;
   line-height: 1.3;
@@ -250,7 +281,7 @@
   font-size: 20px;
   padding: 20px 10px;
   background: #394048;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #474f59;
 }
 
 .documents-feedback h2 {
@@ -309,6 +340,7 @@
 
 .accordion {
   padding: 20px;
+  background: #ddd;
 }
 
 a.c-font-bold {
@@ -353,7 +385,7 @@ a.c-font-bold {
 }
 
 .sticky .hidden-block a:last-child {  
-  padding: 15px;
+  margin: 10px 0;
   color: #fff;
 }
 
@@ -366,7 +398,7 @@ a.c-font-bold {
 .bankruptcy-header h1 {
   text-transform: uppercase;
   font-size: 36px;
-  padding: 20px 0 30px;
+  /*padding: 20px 0 30px;*/
 }
 
 .bankruptcy-header__info {
@@ -374,6 +406,11 @@ a.c-font-bold {
   text-align: center;
   border-radius: 3px;
   border: 1px solid #ddd;
+}
+
+.bankruptcy-header img {
+  width: 100%;
+  height: 300px;
 }
 
 .bankruptcy-header__info h2 {
@@ -403,13 +440,12 @@ a.c-font-bold {
 .bankruptcy-procedure {
   padding: 20px 10px;
   text-align: center;
-  border-bottom: 1px solid #333;
+  background-color: #ddd;
 }
 
 .bankruptcy-procedure h2 {
   font-size: 36px;
   text-transform: uppercase;
-  border-bottom: 1px solid #333;
   padding-bottom: 20px;
 }
 
@@ -419,6 +455,11 @@ a.c-font-bold {
 
 .bankruptcy-procedure .panel {
   text-align: left;
+}
+
+.bankruptcy-procedure .panel-collapse {
+  background: #32c5d2;
+  color: #fff;
 }
 
 .bankruptcy-procedure h3 {
@@ -441,35 +482,43 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
 .bankruptcy-short-info {
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #333;
+  background-color: #394048;
 }
 
 .bankruptcy-short-info__block {
   padding: 15px 20px;
-  border: 1px solid #333 ;
+  background: #32c5d2;
+  color: #fff;
 }
 
 .bankruptcy-short-info__block h2, .bankruptcy-short-info__block p {
   text-align: center;
+  color: #fff;
 }
 
 .bankruptcy-main-info {
   padding: 15px 10px;
 }
 
-.bankruptcy-main-info .accent {
-  display: block;
-  padding: 10px;
-  border: 2px solid #333;
-}
 
 .bankruptcy-main-info a {
   font-weight: bold;
 }
 
+.bankruptcy-main-info img {
+  width: 100%;
+  height: 700px;
+}
+
 .bankruptcy-about-company {
   padding: 15px 10px;
-  border-top: 1px solid #333;
+  border-top: 1px solid #474f59;
+  background: #ddd;
+}
+
+.bankruptcy-about-company img {
+  width: 100%;
+  height: 700px;
 }
 
 .bankruptcy-about-company h2, .bankruptcy-about-company h3 {
@@ -498,7 +547,8 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
 
 .bankruptcy-process {
   padding: 15px 10px;
-  border-bottom: 1px solid #333;
+  background: #ddd;
+
 }
 
 .bankruptcy-process span {
@@ -509,6 +559,10 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
 
 .bankruptcy-process span i:before {
   font-size: 30px;
+}
+
+.c-content-tab-1.c-theme.c-margin-t-30 {
+  background: #fff;
 }
 
 .bankruptcy-process .c-content-tab-1 .nav-tabs li {
@@ -528,11 +582,14 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
 
 .bankruptcy-header ul li {
   display: inline-block;
+  background: #32c5d2;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
   padding: 30px 20px;
   width: 40%;
   margin-right: 20px;
   margin-bottom: 20px;
-  border: 1px solid #333;
   text-align: left;
 }
 
@@ -546,7 +603,7 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
   width: 350px;
   background: #fff;
   border-radius: 5px;
-  border: 1px solid #333;
+  border: 1px solid #474f59;
   z-index: 100;
 }
 
@@ -554,7 +611,7 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
   font-size: 24px;
   margin: 0;
   padding: 10px 15px; 
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #474f59;
 }
 
 .order-call label {
@@ -577,7 +634,7 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
   font-size: 12px;
   padding: 15px;
   margin-bottom: 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #474f59;
 }
 
 .order-call input[type="submit"] {
@@ -606,7 +663,7 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
   position: absolute;
   background: #fff;
   border-radius: 5px;
-  border: 1px solid #333;
+  border: 1px solid #474f59;
   z-index: 100;
 }
 
@@ -634,8 +691,8 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
 }
 
 .pers-info {
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
+  border-top: 1px solid #474f59;
+  border-bottom: 1px solid #474f59;
   padding: 20px 15% 0;
   text-align: right;
 }
@@ -686,6 +743,13 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
   background: #27a8b4;
 }
 
+iframe {
+  position: absolute;
+  width: 100%;
+  height: 605px;
+  top: 0;
+}
+
 @media (max-width: 992px) {
   .documents-feedback form input {
     margin: 6px auto;
@@ -698,6 +762,10 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
   .sticky .hidden-block {
     display: none;
     float: left;
+  }
+
+  .c-content-box.c-size-md.c-bg-green {
+    background: #fff!important;
   }
 }
 
