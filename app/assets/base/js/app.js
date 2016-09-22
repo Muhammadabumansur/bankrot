@@ -396,6 +396,12 @@ var App = function() {
                 bPopup.close();
             })
 
+            $(".animate-left").animated("fadeInLeft", "fadeOutLeft");
+            $(".animate-right").animated("fadeInRight", "fadeOutRight");
+            $(".animate-up").animated("fadeInDown", "fadeOutDown");
+            $(".animate-down").animated("fadeInUp", "fadeOutUp");
+            $(".animate-bounce").animated("bounceIn", "bounceOut");
+            
             $( window ).resize(function(){
                 $( ".file_upload input" ).triggerHandler( "change" );
             });

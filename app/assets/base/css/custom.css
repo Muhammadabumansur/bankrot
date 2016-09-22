@@ -587,6 +587,9 @@ body.c-layout-header-fixed.c-layout-header-mobile-fixed.c-page-on-scroll strong 
   margin-bottom: 20px;
 }
 
+.bankruptcy-header ul {
+  padding-left: 0;
+}
 
 .bankruptcy-header ul li {
   display: inline-block;
@@ -783,8 +786,7 @@ iframe {
   }
 
   .c-links {
-    display: inline-block;
-    
+    display: inline-block;    
   }
 
   .c-phone, .c-top-menu {
@@ -797,6 +799,11 @@ iframe {
 
   .documents-feedback form input[type="text"].sm-right {
     float: right;
+  }
+
+  .bankruptcy-header ul li {
+    vertical-align: top;
+    height: 175px;
   }
 
 }
